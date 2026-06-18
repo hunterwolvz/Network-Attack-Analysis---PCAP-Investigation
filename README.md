@@ -1,95 +1,156 @@
-# Network-Attack-Analysis-&-PCAP-Investigation
+# Network Attack Analysis & PCAP Investigation
 
-A project focused on attack analysis, packet investigation, incident response, and defensive security controls.
+A cybersecurity case study focused on network attack analysis, packet investigation, incident response, and defensive security controls.
 
-Overview
+---
 
-This project combines theory and practical network forensics to investigate a real attack scenario captured in a PCAP file.
+## Overview
+
+This project combines theoretical research with practical network forensics to investigate a real attack scenario using packet capture (PCAP) analysis.
 
 The work covers:
 
-Man-in-the-Middle (MITM) attack analysis
-Wireshark packet investigation
-Apache Tomcat compromise analysis
-Indicators of Compromise (IOCs)
-MITRE ATT&CK mapping
-IDS/IPS detection strategies
-Snort rule development
-Incident reporting and response
-Project Structure
-Part 1 – Man-in-the-Middle Attack
+- Man-in-the-Middle (MITM) attacks
+- Wireshark packet analysis
+- Apache Tomcat compromise investigation
+- Indicators of Compromise (IOCs)
+- MITRE ATT&CK mapping
+- IDS/IPS detection methods
+- Snort rule creation
+- Incident response and reporting
 
-A technical breakdown of how a MITM attack works, including:
+The objective was not only to identify what happened during the attack, but also to understand how it happened, what weaknesses were exploited, how the compromise could have been detected earlier, and how similar incidents can be prevented in the future.
 
-ARP Spoofing
-Traffic interception
-Session hijacking
-SSL/TLS downgrade techniques
-Data manipulation and credential theft
+---
 
-The analysis explains the protocols, OSI layers, attack prerequisites, and business impact.
+## Project Breakdown
 
-Part 2 – PCAP Analysis (Tomcat Takeover)
+### Part 1 – Man-in-the-Middle Attack Analysis
 
-Using Wireshark, I investigated a compromised Apache Tomcat server and reconstructed the attack chain.
+A technical examination of a MITM attack, including:
 
-Key findings:
+- ARP Spoofing
+- Traffic interception
+- Session hijacking
+- SSL/TLS downgrade attacks
+- Data manipulation
+- Credential theft
 
-External reconnaissance and port scanning
-Discovery of exposed Tomcat services
-Directory enumeration using Gobuster
-Upload of a malicious .war file
-Reverse shell deployment
-Command & Control activity
-Possible lateral movement inside the network
+The analysis explains attack prerequisites, exploited vulnerabilities, protocols involved, OSI layers, and potential business impact.
 
-Tools used:
+---
 
-Wireshark
-TCP Stream Analysis
-Protocol Hierarchy
-Conversation Statistics
-Custom display filters
-Part 3 – IDS/IPS Defensive Controls
+### Part 2 – PCAP Investigation (Tomcat Takeover)
 
-The project discusses how intrusion detection systems can identify MITM activity and other malicious behavior.
+Using Wireshark, I reconstructed a full attack chain against an Apache Tomcat server.
 
-Topics include:
+Key findings include:
 
-NIDS vs HIDS
-Network anomaly detection
-ARP spoofing detection
-SSL stripping indicators
-Custom Snort rules
-Part 4 – Security Fundamentals
+- External reconnaissance
+- Port scanning activity
+- Directory enumeration using Gobuster
+- Discovery of exposed Tomcat services
+- Upload of a malicious `.war` file
+- Reverse shell deployment
+- Command-and-Control communication
+- Potential lateral movement
+
+Tools and techniques used:
+
+- Wireshark
+- TCP Stream Analysis
+- Protocol Hierarchy
+- Conversation Statistics
+- Custom display filters
+- IOC identification
+
+---
+
+### Part 3 – IDS/IPS Detection Strategy
+
+This section explores how defensive monitoring systems could detect and respond to the attack.
+
+Topics covered:
+
+- Network IDS (NIDS) vs Host IDS (HIDS)
+- Detection of ARP spoofing
+- SSL stripping indicators
+- Traffic anomaly detection
+- Custom Snort rules
+- Additional security controls
+
+---
+
+### Part 4 – Security Fundamentals
 
 Short discussions covering:
 
-Why WEP is obsolete
-WPA2/WPA3 security improvements
-GDPR breach reporting requirements
-NIST security controls
-Part 5 – Incident Report
+- Why WEP is considered insecure
+- WPA2 and WPA3 improvements
+- GDPR breach reporting requirements
+- NIST security controls
 
-A management-oriented incident report summarizing:
+---
 
-What happened
-Affected systems
-Severity assessment
-Recommended remediation actions
-Lessons learned
-Skills Demonstrated
-Network Security
-Packet Analysis
-Wireshark
-Threat Hunting
-Incident Response
-Digital Forensics
-IDS/IPS Concepts
-Snort Rule Writing
-MITRE ATT&CK
-Risk Assessment
-Technical Reporting
-Key Takeaway
+### Part 5 – Incident Report
 
-This project demonstrates how a real-world intrusion can be identified and reconstructed from network traffic, moving from reconnaissance and exploitation to persistence and command-and-control activity, while also exploring practical detection and mitigation techniques.
+A management-focused incident report summarizing:
+
+- What happened
+- Timeline of events
+- Affected systems
+- Severity assessment
+- Recommended actions
+- Lessons learned
+
+---
+
+## Skills Demonstrated
+
+- Network Security
+- Packet Analysis
+- Wireshark
+- Digital Forensics
+- Threat Hunting
+- Incident Response
+- MITRE ATT&CK
+- IDS/IPS Concepts
+- Snort Rule Development
+- Risk Assessment
+- Technical Reporting
+
+---
+
+## Attack Timeline Summary
+
+1. External attacker performs reconnaissance.
+2. Open Tomcat service discovered on port 8080.
+3. Automated directory enumeration identifies exposed resources.
+4. Administrative interface is accessed.
+5. Malicious `.war` file uploaded.
+6. Reverse shell established.
+7. Persistent access achieved.
+8. Outbound Command-and-Control communication observed.
+9. Possible lateral movement inside the network.
+
+---
+
+## Key Takeaways
+
+This project demonstrates how packet captures can be used to reconstruct an attack from initial reconnaissance to full compromise.
+
+The investigation highlights the importance of:
+
+- Network visibility
+- Early threat detection
+- Secure service configuration
+- Continuous monitoring
+- Incident response preparedness
+
+---
+
+## Disclaimer
+
+This repository is intended for educational purposes only.
+
+All analysis was performed using training material, lab environments, and publicly available cybersecurity resources. No real systems were targeted or accessed during this project.
