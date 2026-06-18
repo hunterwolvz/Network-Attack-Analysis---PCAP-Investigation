@@ -132,7 +132,3 @@ The investigation highlights the importance of:
 - Secure service configuration
 - Continuous monitoring
 - Incident response preparedness
-
-
-
-All analysis was performed using training material, lab environments, and publicly available cybersecurity resources. No real systems were targeted or accessed during this project.
