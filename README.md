@@ -2,7 +2,6 @@
 
 A cybersecurity case study focused on network attack analysis, packet investigation, incident response, and defensive security controls.
 
----
 
 ## Overview
 
@@ -21,7 +20,6 @@ The work covers:
 
 The objective was not only to identify what happened during the attack, but also to understand how it happened, what weaknesses were exploited, how the compromise could have been detected earlier, and how similar incidents can be prevented in the future.
 
----
 
 ## Project Breakdown
 
@@ -37,8 +35,6 @@ A technical examination of a MITM attack, including:
 - Credential theft
 
 The analysis explains attack prerequisites, exploited vulnerabilities, protocols involved, OSI layers, and potential business impact.
-
----
 
 ### Part 2 – PCAP Investigation (Tomcat Takeover)
 
@@ -64,8 +60,6 @@ Tools and techniques used:
 - Custom display filters
 - IOC identification
 
----
-
 ### Part 3 – IDS/IPS Detection Strategy
 
 This section explores how defensive monitoring systems could detect and respond to the attack.
@@ -79,7 +73,6 @@ Topics covered:
 - Custom Snort rules
 - Additional security controls
 
----
 
 ### Part 4 – Security Fundamentals
 
@@ -89,8 +82,6 @@ Short discussions covering:
 - WPA2 and WPA3 improvements
 - GDPR breach reporting requirements
 - NIST security controls
-
----
 
 ### Part 5 – Incident Report
 
@@ -102,8 +93,6 @@ A management-focused incident report summarizing:
 - Severity assessment
 - Recommended actions
 - Lessons learned
-
----
 
 ## Skills Demonstrated
 
@@ -119,8 +108,6 @@ A management-focused incident report summarizing:
 - Risk Assessment
 - Technical Reporting
 
----
-
 ## Attack Timeline Summary
 
 1. External attacker performs reconnaissance.
@@ -133,7 +120,6 @@ A management-focused incident report summarizing:
 8. Outbound Command-and-Control communication observed.
 9. Possible lateral movement inside the network.
 
----
 
 ## Key Takeaways
 
@@ -147,10 +133,6 @@ The investigation highlights the importance of:
 - Continuous monitoring
 - Incident response preparedness
 
----
 
-## Disclaimer
-
-This repository is intended for educational purposes only.
 
 All analysis was performed using training material, lab environments, and publicly available cybersecurity resources. No real systems were targeted or accessed during this project.
